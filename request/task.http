@@ -1,0 +1,36 @@
+###
+GET http://localhost:3000/api/task
+
+###
+GET http://localhost:3000/api/task?page=0&size=5
+
+###
+POST http://localhost:3000/api/task
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio JavaScript",
+    "description": "trabajo prueva",
+    "done": true
+}
+
+###
+
+GET http://localhost:3000/api/task/60ba23b3e964380f1c657649
+
+###
+
+DELETE http://localhost:3000/api/task/60ba2c967aa8aa2168ee559c
+
+###
+
+GET http://localhost:3000/api/task/done
+
+###
+
+PUT http://localhost:3000/api/task/60ba4d34fa2c49186c4880e7
+Content-Type: application/json
+
+{
+    "title": "Crear un sitio en wix"
+}
